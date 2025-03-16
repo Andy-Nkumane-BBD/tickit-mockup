@@ -1,0 +1,121 @@
+:root {
+    --color-bg-dark-h: 210;
+    --color-bg-dark-s: 20%;
+    --color-bg-dark-l: 10%;
+    --color-primary: #1E90FF;
+    --color-contrast-high: #40bbe0;
+}
+
+.nav-logo
+{
+    width: auto;
+    height: 5rem;
+    border: 4pt solid black;
+}
+
+.subnav__nav 
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subnav__nav::after 
+{
+    content: "";
+    width: 1em;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to right, hsla(var(--color-bg-dark-h), var(--color-bg-dark-s), var(--color-bg-dark-l), 0), hsla(var(--color-bg-dark-h), var(--color-bg-dark-s), var(--color-bg-dark-l), 1));
+    pointer-events: none;
+}
+
+.subnav__list 
+{
+    display: flex;
+    overflow: auto;
+}
+
+.subnav__item 
+{
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.subnav__link 
+{
+    display: block;
+    font-size: var(--text-sm);
+    padding: 1.5625em;
+    text-decoration: none;
+    color: hsla(var(--color-contrast-high-h), var(--color-contrast-high-s), var(--color-contrast-high-l), 0.65);
+    border: 3px solid transparent;
+    border-right-width: 0;
+    border-left-width: 0;
+    transition: 0.2s;
+}
+
+.subnav__link:hover 
+{
+    color: var(--color-contrast-high);
+}
+
+.subnav__link[aria-current=page] 
+{
+    border-bottom-color: var(--color-primary);
+    color: var(--color-contrast-high);
+}
+
+button {
+    --color: var(--color-primary);
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color-primary);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color-primary);
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color-primary);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  button:hover {
+    color: #fff;
+  }
+  
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  button:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+  }
+  
