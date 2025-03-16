@@ -4,29 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TickIt</title>
+    <link rel="icon" type="image/png" href="images/tickit-logo-icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="subnav__nav justify-center">      
-        <section class="section-nav-logo">
-            <img class="nav-logo" src="images/tickit-logo.png" alt="tickit logo">
+    <nav id="nav-justify-center">      
+        <section id="section-nav-logo">
+            <img id="nav-logo" src="images/tickit-logo.png" alt="tickit logo">
         </section>
-        <section class="section-nav-items">
-            <ul class="subnav__list">
-                <li class="subnav__item"><a href="0" class="subnav__link" aria-current=page>Intro</a></li>
-                <li class="subnav__item"><a href="0" class="subnav__link">Features</a></li>
-                <li class="subnav__item"><a href="0" class="subnav__link">Photos</a></li>
-                <li class="subnav__item"><a href="0" class="subnav__link">Videos</a></li>
-                <li class="subnav__item"><a href="0" class="subnav__link">Specs</a></li>
-                <li class="subnav__item"><a href="0" class="subnav__link">Support</a></li>
-                <li class="subnav__item"><a href="0" class="subnav__link">Compare</a></li>
-                <li class="subnav__item"><a href="0" class="subnav__link">Buy</a></li>
+        <section id="section-nav-items">
+            <ul id="nav-list">
+                <li class="nav-item"><a href="0" class="nav-link" aria-current=page>Intro</a></li>
+                <li class="nav-item"><a href="0" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="0" class="nav-link">Photos</a></li>
+                <li class="nav-item"><a href="0" class="nav-link">Videos</a></li>
+                <li class="nav-item"><a href="0" class="nav-link">Specs</a></li>
+                <li class="nav-item"><a href="0" class="nav-link">Support</a></li>
+                <li class="nav-item"><a href="0" class="nav-link">Compare</a></li>
+                <li class="nav-item"><a href="0" class="nav-link">Buy</a></li>
             </ul>
         </section>
-        <section class="section-nav-buttons">
-            <button>login</button>
-            <button>start for free</button>
+        <section id="nav-buttons">
+            <button class="nav-button">login</button>
+            <button class="nav-button">start for free</button>
         </section>
     </nav>
+
+    <section class="grid-column-2">
+        <section class="grid-item">
+            <img class="grid-image" src="images/tickit-logo.png" alt="tickit logo">
+            <p>TickIt</p>
+        </section>
+        <section class="grid-item">
+            <img class="grid-image" src="images/tickit-logo-icon.png" alt="tickit logo">
+            <p>TickIt</p>
+        </section>
+    </section>
 </body>
 </html>

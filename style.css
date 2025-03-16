@@ -6,23 +6,20 @@
     --color-contrast-high: #40bbe0;
 }
 
-.nav-logo
-{
+#nav-logo {
     width: auto;
     height: 5rem;
     border: 4pt solid black;
 }
 
-.subnav__nav 
-{
+#nav-justify-center {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.subnav__nav::after 
-{
+#nav-justify-center::after {
     content: "";
     width: 1em;
     height: 100%;
@@ -33,20 +30,17 @@
     pointer-events: none;
 }
 
-.subnav__list 
-{
+#nav-list {
     display: flex;
     overflow: auto;
 }
 
-.subnav__item 
-{
+.nav-item {
     display: inline-block;
     flex-shrink: 0;
 }
 
-.subnav__link 
-{
+.nav-link {
     display: block;
     font-size: var(--text-sm);
     padding: 1.5625em;
@@ -58,19 +52,16 @@
     transition: 0.2s;
 }
 
-.subnav__link:hover 
-{
+.nav-link:hover {
     color: var(--color-contrast-high);
 }
 
-.subnav__link[aria-current=page] 
-{
+.nav-link[aria-current=page] {
     border-bottom-color: var(--color-primary);
     color: var(--color-contrast-high);
 }
 
-button {
-    --color: var(--color-primary);
+.nav-button {
     font-family: inherit;
     display: inline-block;
     width: 8em;
@@ -87,9 +78,9 @@ button {
     border-radius: 6px;
     font-weight: 500;
     color: var(--color-primary);
-  }
+}
   
-  button:before {
+.nav-button:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -97,25 +88,44 @@ button {
     height: 150px;
     width: 200px;
     border-radius: 50%;
-  }
+}
   
-  button:hover {
+.nav-button:hover {
     color: #fff;
-  }
+}
   
-  button:before {
+.nav-button:before {
     top: 100%;
     left: 100%;
     transition: all 0.7s;
-  }
+}
   
-  button:hover:before {
+.nav-button:hover:before {
     top: -30px;
     left: -30px;
-  }
+}
   
-  button:active:before {
+.nav-button:active:before {
     background: #3a0ca3;
     transition: background 0s;
-  }
+}
+
+#nav-logo {
+  transition: opacity 0.3s ease-in;
+}
+
+#nav-logo:hover {
+  content: url('images/tickit-logo-full-name.png');
+}
   
+.grid-column-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 5rem;
+}
+
+.grid-item{
+    border: 4pt solid var(--color-primary);
+    padding: 5rem;
+}
