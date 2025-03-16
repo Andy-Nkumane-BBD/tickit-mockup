@@ -61,7 +61,7 @@
     color: var(--color-contrast-high);
 }
 
-.nav-button {
+button {
     font-family: inherit;
     display: inline-block;
     width: 8em;
@@ -80,7 +80,7 @@
     color: var(--color-primary);
 }
   
-.nav-button:before {
+button:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -90,22 +90,22 @@
     border-radius: 50%;
 }
   
-.nav-button:hover {
+button:hover {
     color: #fff;
 }
   
-.nav-button:before {
+button:before {
     top: 100%;
     left: 100%;
     transition: all 0.7s;
 }
   
-.nav-button:hover:before {
+button:hover:before {
     top: -30px;
     left: -30px;
 }
   
-.nav-button:active:before {
+button:active:before {
     background: #3a0ca3;
     transition: background 0s;
 }
@@ -123,9 +123,14 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 5rem;
+    padding: 3rem;
 }
 
-.grid-item{
+.grid-item {
     border: 4pt solid var(--color-primary);
     padding: 5rem;
+}
+
+section {
+    justify-items: center;
 }

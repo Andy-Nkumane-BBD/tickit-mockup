@@ -68,7 +68,3 @@ Transform the way your team works—one project at a time.
 TickIt isn’t just a tool; it’s a game-changer. Whether you’re managing a small project or a large-scale initiative, we help you achieve your goals with ease. Don’t let complex workflows hold you back—take control today.
 
 [Sign Up Now]  |  [Learn More] 
-
----
-
-This content layout focuses on providing users with a clear understanding of what the app does, its key features, and why it is valuable for team collaboration and productivity. It’s designed to appeal to teams looking for an easy-to-use, powerful platform for managing projects and tasks.
