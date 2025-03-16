@@ -119,6 +119,10 @@ button:active:before {
 #nav-logo:hover {
   content: url('images/tickit-logo-full-name.png');
 }
+
+section {
+    justify-items: center;
+}
   
 .grid-column-2 {
     display: grid;
@@ -128,11 +132,7 @@ button:active:before {
     padding: 3rem;
 }
 
-.grid-item {
+/* .grid-item {
     border: 4pt solid var(--color-primary);
     padding: 5rem;
-}
-
-section {
-    justify-items: center;
-}
+} */
