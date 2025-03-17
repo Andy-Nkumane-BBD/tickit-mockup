@@ -5,129 +5,235 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TickIt</title>
     <link rel="icon" type="image/png" href="images/tickit-logo-icon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles-3.css">
 </head>
 <body>
-    <nav id="nav-justify-center">      
-        <section id="section-nav-logo">
-            <img id="nav-logo" src="images/tickit-logo.png" alt="tickit logo">
+    <header class="site-header">
+        <nav>
+            <img class="logo" src="images/tickit-logo.png" alt="tickit logo">
+            
+            <input type="checkbox" id="mobile-menu-checkbox">
+            <label for="mobile-menu-checkbox" class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!-- update -->
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <!-- <li><a href="#screenshots">Screenshots</a></li> -->
+                <li><a href="#workflow">Workflow</a></li>
+                <li><a href="#features-detail">Features Detail</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <aside class="cta-button">
+                <a href="#" class="button">Try for Free</a>
+            </aside>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <article class="hero-content">
+                <h2>Collaborate, Track, Succeed</h2>
+                <p>TickIt helps teams manage projects with customizable roles, task prioritization, and real-time notifications in a visual Kanban environment.</p>
+                <nav class="hero-buttons">
+                    <a href="#" class="button primary">Start Your Project</a>
+                    <a href="#" class="button secondary">Watch Demo</a>
+                </nav>
+            </article>
+            <figure class="hero-image">
+                <img src="images/productivity.png" alt="TickIt Dashboard Preview">
+            </figure>
         </section>
-        <section id="section-nav-items">
-            <ul id="nav-list">
-                <li class="nav-item"><a href="#welcome" class="nav-link" aria-current=page>Welcome</a></li>
-                <li class="nav-item"><a href="#key-features" class="nav-link">Key Features</a></li>
-                <li class="nav-item"><a href="#task-creation" class="nav-link">Task Creation & Assignment</a></li>
-                <li class="nav-item"><a href="#track-task-progress" class="nav-link">Track Task Progress with Ease</a></li>
-                <li class="nav-item"><a href="#prioritize-and-label-tasks" class="nav-link">Prioritize & Organize with Labels</a></li>
-                <li class="nav-item"><a href="get-started" class="nav-link">Get Started</a></li>
-                <li class="nav-item"><a href="join-us" class="nav-link">Join Us</a></li>
+
+        <section id="features" class="features">
+            <h2>Powerful Project Management</h2>
+            <ul class="features-grid">
+                <li class="feature-card">
+                    <img class="grid-image" src="images/collab.png" alt="collaboration">
+                    <h3>Team Collaboration</h3>
+                    <p>Add team members with customizable roles: Admin, Collaborator, or Viewer. Control who can edit, comment, or just view your projects.</p>
+                </li>
+                <li class="feature-card">
+                    <img class="grid-image" src="images/task-management.png" alt="task management">
+                    <h3>Task Management</h3>
+                    <p>Create detailed tasks with due dates, custom labels, and priority levels. Track progress from start to completion.</p>
+                </li>
+                <li class="feature-card">
+                    <img class="grid-image" src="images/kanban.jpg" alt="kanban"> 
+                    <h3>Kanban Boards</h3>
+                    <p>Visualize your workflow with customizable Kanban boards. Drag and drop tasks between columns as they progress.</p>
+                </li>
+                <li class="feature-card">
+                    <img class="grid-image" src="images/notification.png" alt="notification"> 
+                    <h3>Smart Notifications</h3>
+                    <p>Stay informed with real-time notifications for task assignments, approaching deadlines, and project updates.</p>
+                </li>
             </ul>
         </section>
-        <section id="nav-buttons">
-            <button class="nav-button">login</button>
-            <button class="nav-button">start for free</button>
-        </section>
-    </nav>
 
-    <section class="grid-column-2" id="welcome">
-        <section class="grid-item-content">
-            <h1>Welcome to TickIt - Your Ultimate Team Collaboration & Productivity Tool</h1>
-            <h2>Streamline Your Workflow, Achieve More Together</h2>
-            <p>In today's fast-paced work environment, managing projects and staying on top of tasks can feel overwhelming. 
-                That's why we've created TickIt, a powerful productivity app designed to help teams collaborate seamlessly, 
-                track tasks effortlessly, and complete projects with maximum efficiency.</p>
-        </section>
-        <section class="grid-item">
-            <img class="grid-image" src="images/productivity.png" alt="welcome to tickit">
-        </section>
-    </section>
+        <!-- <section id="screenshots" class="screenshots">
+            <h2>See TickIt in Action</h2>
+            <ul class="screenshot-container">
+                <li class="screenshot">
+                    <figure>
+                        <img src="https://via.placeholder.com/800x500" alt="Project Dashboard">
+                        <figcaption>Project Dashboard with Role Management</figcaption>
+                    </figure>
+                </li>
+                <li class="screenshot">
+                    <figure>
+                        <img src="https://via.placeholder.com/800x500" alt="Kanban Board">
+                        <figcaption>Interactive Kanban Board</figcaption>
+                    </figure>
+                </li>
+                <li class="screenshot">
+                    <figure>
+                        <img src="https://via.placeholder.com/800x500" alt="Task Detail View">
+                        <figcaption>Detailed Task Management</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section> -->
 
-    <section class="grid-column-2" id="key-features">
-        <section class="grid-item">
-            <img class="grid-image" src="images/collab.png" alt="collaboration">
+        <section class="workflow" id="workflow">
+            <h2>How It Works</h2>
+            <ol class="workflow-steps">
+                <li class="workflow-step">
+                    <span class="step-number">1</span>
+                    <h3>Create a Project</h3>
+                    <p>Set up your project with a title, description, and deadline. Customize your Kanban columns to match your workflow.</p>
+                </li>
+                <li class="workflow-step">
+                    <span class="step-number">2</span>
+                    <h3>Add Team Members</h3>
+                    <p>Invite collaborators and assign roles: Admin (full control), Collaborator (can edit), or Viewer (read-only access).</p>
+                </li>
+                <li class="workflow-step">
+                    <span class="step-number">3</span>
+                    <h3>Create Tasks</h3>
+                    <p>Add tasks with due dates, priority levels (Low, Medium, High, Urgent), and custom labels for organization.</p>
+                </li>
+                <li class="workflow-step">
+                    <span class="step-number">4</span>
+                    <h3>Track Progress</h3>
+                    <p>Move tasks across your Kanban board as they progress. Receive notifications for updates and approaching deadlines.</p>
+                </li>
+            </ol>
         </section>
-        <section class="grid-item-content">
-            <h1>Key Features</h1>
-            <h2>Team Collaboration Made Simple</h2>
-            <p>Create a project, add collaborators, and work together in a dynamic, streamlined environment. TickIt makes it 
-                easy to bring your team together, no matter the size or complexity of your project. With customizable user roles, 
-                everyone has the right level of access.</p>
-            <ul>
-                <li><b>Roles & Permissions</b>: Assign roles to team members—Admin, Collaborator, or Viewer—ensuring that everyone has 
-                    the appropriate level of control over the project.</li>
-                <li><b>Collaborator Management</b>: Easily add and remove team members, allowing for flexible team structures and 
-                    real-time collaboration.</li>
+
+        <section class="features-detail" id="features-detail">
+            <h2>Detailed Features</h2>
+            <ul class="features-detail-grid">
+                <li class="feature-detail-card">
+                    <h3>Project Management</h3>
+                    <ul>
+                        <li>Create unlimited projects</li>
+                        <li>Set project deadlines</li>
+                        <li>Track project progress</li>
+                    </ul>
+                </li>
+                <li class="feature-detail-card">
+                    <h3>Role-Based Access</h3>
+                    <ul>
+                        <li>Admin: Full control over projects</li>
+                        <li>Collaborator: Can create and edit tasks</li>
+                        <li>Viewer: Read-only access to projects</li>
+                    </ul>
+                </li>
+                <li class="feature-detail-card">
+                    <h3>Task Management</h3>
+                    <ul>
+                        <li>Due dates with time tracking</li>
+                        <li>Priority levels (Low to Urgent)</li>
+                        <li>Custom color-coded labels</li>
+                    </ul>
+                </li>
+                <li class="feature-detail-card">
+                    <h3>Kanban & Visualization</h3>
+                    <ul>
+                        <li>Kanban boards</li>
+                        <li>Drag-and-drop interface</li>
+                        <li>Multiple view options</li>
+                        <li>Progress tracking</li>
+                    </ul>
+                </li>
+                <li class="feature-detail-card">
+                    <h3>Notifications</h3>
+                    <ul>
+                        <li>Real-time updates</li>
+                        <li>Deadline reminders</li>
+                        <li>Assignment notifications</li>
+                    </ul>
+                </li>
             </ul>
         </section>
-    </section>
 
-    <section class="grid-column-2" id="task-creation">
-        <section class="grid-item-content">
-            <h1>Task Creation & Assignment</h1>
-            <p>Create tasks with just a few clicks and assign them to your team members. Whether it's a small to-do or a complex project d
-                eliverable, TickIt gives you the tools to stay organized.</p>
-            <ul>
-                <li><b>Task Creation</b>: Quickly break your project into actionable tasks with clear titles, descriptions, and due dates.</li>
-                <li><b>Assign Tasks</b>: Assign tasks to collaborators based on their expertise, availability, or priority level, keeping everyone on track.</li>
-                <li><b>Task Roles</b>: Control who can view, edit, and manage tasks with role-based permissions. Admins have full access, collaborators can edit, 
-                    and viewers can track progress.</li>
-            </ul>
+        <section class="cta">
+            <h2>Ready to boost your team's productivity?</h2>
+            <p>Join thousands of teams already using TickIt to manage projects efficiently.</p>
+            <a href="#" class="button primary large">Get Started Today</a>
         </section>
-        <section class="grid-item">
-            <img class="grid-image" src="images/tasks.jpg" alt="think, plan, act">
-        </section>
-    </section>
 
-    <section class="grid-column-2" id="track-task-progress">
-        <section class="grid-item">
-            <img class="grid-image" src="images/kanban.jpg" alt="kanban board">
+        <section id="contact" class="contact">
+            <h2>Have Questions?</h2>
+            <p>Our team is here to help you get started with TickIt.</p>
+            <form class="contact-form">
+                <fieldset class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                </fieldset>
+                <button type="submit" class="button primary">Send Message</button>
+            </form>
         </section>
-        <section class="grid-item-content">
-            <h1>Track Task Progress with Ease</h1>
-            <p>Stay on top of task progress with a simple, intuitive tracking system. Each task goes through four stages—so you always 
-                know where things stand.</p>
-            <ul>
-                <li><b>4 Progress Stages</b>: From "Not Started" to "In Progress," "Pending Review," and finally "Complete," track the 
-                    progress of each task in real-time.</li>
-                <li><b>Visual Overview</b>: Quickly glance at your project’s progress and identify bottlenecks or areas needing attention 
-                    with clear visual indicators.</li>
-            </ul>
-        </section>
-    </section>
+    </main>
 
-    <section class="grid-column-2" id="priotise-and-label-tasks">
-        <section class="grid-item-content">
-            <h1>Prioritize & Organize with Labels</h1>
-            <p>Efficiently manage tasks with a customizable Kanban system and intuitive task labels. Prioritizing and categorizing your tasks has 
-                never been easier.</p>
-            <ul>
-                <li><b>Priority Levels</b>: Assign tasks one of four priority levels—Low, Medium, High, or Urgent—so your team knows which tasks need 
-                    immediate attention.</li>
-                <li><b>Labels</b>: Use labels to categorize tasks based on type, department, or any other custom criteria, giving your team an organized 
-                    view of the work at hand.</li>
-                <li><b>Kanban Board</b>: Drag and drop tasks through different stages on a visual Kanban board, making it easy to track and adjust the flow 
-                    of work.</li>
-            </ul>
+    <footer>
+        <section class="footer-content">
+            <article class="footer-logo">
+                <img class="logo" src="images/tickit-logo-full-name.png" alt="tickit logo">
+                <p>Collaborative project management made simple.</p>
+            </article>
+            <nav class="footer-links">
+                <section class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </section>
+                <section class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </section>
+                <section class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </section>
+            </nav>
         </section>
-        <section class="grid-item">
-            <img class="grid-image" src="images/prioritize.png" alt="priority stamp">
+        <section class="footer-bottom">
+            <p>&copy; <time datetime="2025">2025</time> TickIt. All rights reserved.</p>
+            <nav class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </nav>
         </section>
-    </section>
-
-    <section id="get-started">
-        <h1>Get Started Today</h1>
-        <p>Ready to take your team's productivity to the next level? Sign up for a free trial of TickIt and experience the power of seamless collaboration, 
-            task management, and real-time tracking.
-            <br>
-            Transform the way your team works—one project at a time.</p>
-    </section>
-
-    <section id="join-us">
-        <h1>Join Us</h1>
-        <p>TickIt isn't just a tool; it's a game-changer. Whether you're managing a small project or a large-scale initiative, we help you achieve your 
-            goals with ease. Don't let complex workflows hold you back—take control today.
-        </p>
-        <button>start for free</button>
-    </section>
+    </footer>
 </body>
 </html>
